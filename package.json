@@ -1,0 +1,44 @@
+{
+  "name": "webos-api-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "scripts": {
+    "dev": "npx nodemon",
+    "build:clean": "rimraf ./build && npx tsc",
+    "build": "npx tsc",
+    "start": "node build/main",
+    "start:clean": "yarn build:clean && yarn start",
+    "lint": "npx eslint ./src",
+    "format": "npx eslint ./src --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.9",
+    "@types/ws": "^8.5.4",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0",
+    "husky": "^8.0.3",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.7",
+    "rimraf": "^4.4.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "@types/lowdb": "^1.0.11",
+    "express": "^4.18.2",
+    "lowdb": "^5.1.0",
+    "ws": "^8.13.0"
+  }
+}

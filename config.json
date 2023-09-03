@@ -1,0 +1,12 @@
+{
+  "LG_C2": {
+    "ip": "192.168.1.154",
+    "secure": true,
+    "enabled": true
+  },
+  "LG_TEST": {
+    "ip": "127.0.0.1",
+    "secure": false,
+    "enabled": false
+  }
+}
