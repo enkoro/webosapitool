@@ -1,0 +1,9 @@
+services:
+  webosapitool:
+    image: 'enkoro/webosapitool:latest'
+    ports:
+      - 8123:8123
+    environment:
+      CONFIG_DIR: '/config'
+    volumes:
+      - d:\test:/config
